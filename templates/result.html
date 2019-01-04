@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+        <title>Prediction</title>
+    </head>
+
+
+    <body>
+      <h1>It is a... {{ label }}!!!</h1>
+
+      <img src="{{ fruit_image }}"></img>
+      <h1>Perform new classification</h1>
+
+
+      <header class="navbar">
+        <form action="/predict" method="post" enctype="multipart/form-data" >
+            <span class="btn btn-default btn-file">
+              Browse <input type="file" name="image">
+            </span>
+
+          <input type="submit" value="Predict" class="btn btn-primary">
+        </form>
+
+      </header>
+
+    </body>
+</html>
