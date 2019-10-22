@@ -26,7 +26,7 @@ packaging==18.0
 pandas==0.23.4
 path.py==11.5.0
 pickleshare==0.7.5
-Pillow==5.3.0
+Pillow==6.2.0
 requests==2.20.1
 ruamel-yaml==0.15.46
 scikit-image==0.14.0
